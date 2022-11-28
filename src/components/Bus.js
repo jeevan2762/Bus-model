@@ -14,7 +14,10 @@ const Bus = () => <div>
 	<div className="backDoorGlass2"/>
 	<div className="redLights"/>
 	<div className="frontGlass"/>
-	<div className="frontSideMirror"/>
+	<div className="rearIndicator"/>
+	<div className="topDesign"/>
+	<div className="window1"/>
+
 </div>;
 
 export default Bus;
