@@ -1,7 +1,155 @@
 .App {
 	text-align: center;
-
-	button {
-		font-weight: bold;
-	}
 }
+
+.busBody{
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	height: 350px;
+	width: 1200px;
+	border-radius: 20px;
+	background-color: peachpuff;
+	border: 2px solid black;
+	clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.frontWheel{
+	position: absolute;
+	top: 440px;
+	left: 220px;
+	height: 120px;
+	width: 120px;
+	border-radius: 75px;
+	background-color: black;
+	border: 5px solid grey;
+}
+
+.frontWheelInterior{
+	position: absolute;
+	top: 480px;
+	left: 261px;
+	height: 37px;
+	width: 37px;
+	border-radius: 35px;
+	background-color: white;
+	border: 5px solid black;
+}
+
+.backWheel{
+	position: absolute;
+	top: 440px;
+	left: 950px;
+	height: 120px;
+	width: 120px;
+	border-radius: 75px;
+	background-color: black;
+	border: 5px solid grey;
+}
+
+.backWheelInterior{
+	position: absolute;
+	top: 480px;
+	left: 990px;
+	height: 37px;
+	width: 37px;
+	border-radius: 35px;
+	background-color: white;
+	border: 5px solid black;
+}
+
+.frontDoor{
+	position: absolute;
+	top: 300px;
+	left: 380px;
+	height: 185px;
+	width: 115px;
+	background-color: seashell;
+	border: 5px solid black;
+}
+
+.backDoor{
+	position: absolute;
+	top: 300px;
+	left: 1110px;
+	height: 185px;
+	width: 115px;
+	background-color: seashell;
+	border: 5px solid black;
+}
+
+.frontDoorGlass1{
+	position: absolute;
+	top: 310px;
+	left: 388px;
+	height: 175px;
+	width: 50px;
+	background-color:lightblue;
+	border: 1px solid black;
+}
+
+.frontDoorGlass2{
+	position: absolute;
+	top: 310px;
+	left: 445px;
+	height: 175px;
+	width: 50px;
+	background-color:lightblue;
+	border: 1px solid black;
+}
+
+.backDoorGlass1{
+	position: absolute;
+	top: 310px;
+	left: 1118px;
+	height: 175px;
+	width: 50px;
+	background-color:lightblue;
+	border: 1px solid black;
+}
+
+.backDoorGlass2{
+	position: absolute;
+	top: 310px;
+	left: 1175px;
+	height: 175px;
+	width: 50px;
+	background-color:lightblue;
+	border: 1px solid black;
+}
+
+.redLights{
+	position: absolute;
+	top: 390px;
+	left: 1300px;
+	height: 65px;
+	width: 20px;
+	background-color: red;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.frontGlass{
+	position: absolute;
+	top: 152px;
+	left: 120px;
+	height: 230px;
+	width: 40px;
+	background-color: lightblue;
+	border-radius: 2px;
+	border: 1px solid lightskyblue;
+	clip-path: polygon(90% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.frontSideMirror{
+	position: absolute;
+	top: 180px;
+	left: 110px;
+	height: 5px;
+	width: 60px;
+	background-color: black;
+}
+
+
+
+
