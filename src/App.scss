@@ -9,9 +9,36 @@
 	height: 350px;
 	width: 1200px;
 	border-radius: 20px;
-	background-color: peachpuff;
+	background-color: mediumpurple;
 	clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	border: 2px solid black;
+}
+
+.road{
+	position: absolute;
+	top: 420px;
+	left: 2px;
+	height: 400px;
+	width: 1400px;
+	background-color: rgb(36, 32, 32);
+}
+
+.roadMidLine{
+	position: absolute;
+	top: 620px;
+	left: 2px;
+	height: 0px;
+	width: 1400px;
+	border: 4px dashed yellow;
+}
+
+.roadSideLines{
+	position: absolute;
+	top: 450px;
+	left: 2px;
+	height: 0px;
+	width: 1400px;
+	border: 3px solid yellow;
 }
 
 .frontWheel{
@@ -23,6 +50,7 @@
 	border-radius: 75px;
 	background-color: black;
 	border: 5px solid grey;
+	clip-path: circle(100% at 50% 50%);
 }
 
 .frontWheelInterior{
@@ -80,7 +108,7 @@
 
 .frontDoorGlass1{
 	position: absolute;
-	top: 310px;
+	top: 309px;
 	left: 388px;
 	height: 175px;
 	width: 50px;
@@ -90,7 +118,7 @@
 
 .frontDoorGlass2{
 	position: absolute;
-	top: 310px;
+	top: 309px;
 	left: 445px;
 	height: 175px;
 	width: 50px;
@@ -100,7 +128,7 @@
 
 .backDoorGlass1{
 	position: absolute;
-	top: 310px;
+	top: 309px;
 	left: 1118px;
 	height: 175px;
 	width: 50px;
@@ -110,7 +138,7 @@
 
 .backDoorGlass2{
 	position: absolute;
-	top: 310px;
+	top: 309px;
 	left: 1175px;
 	height: 175px;
 	width: 50px;
@@ -161,14 +189,76 @@
 	border: 3px outset black;
 }
 
-.window1{
-  position: absolute;
-  top: 170px;
-  left: 250px;
-  height: 100px;
-  width: 1000px;
+.window{
+  // position: absolute;
+  // top: 170px;
+  // left: 240px;
+  // height: 100px;
+  // width: 200px;
   background-color: lightblue;
   border-radius: 5px;
   border: 2px solid black;
 }
 
+.window2{
+  position: absolute;
+  top: 170px;
+  left: 450px;
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.window3{
+  position: absolute;
+  top: 170px;
+  left: 660px;
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.window4{
+  position: absolute;
+  top: 170px;
+  left: 870px;
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.window5{
+  position: absolute;
+  top: 170px;
+  left: 1080px;
+  height: 100px;
+  width: 200px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.windowBorder{
+	position: absolute;
+  top: 168px;
+  left: 237px;
+  height: 108px;
+  width: 1050px;
+  background-color: rgb(7, 5, 3);
+	border-radius: 5px;
+}
+
+.luggageSecHandle{
+	position: absolute;
+  top: 459px;
+  left: 770px;
+  height: 10px;
+  width: 50px;
+	background-color: black;
+}

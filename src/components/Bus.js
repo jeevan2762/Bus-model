@@ -1,23 +1,28 @@
 import { React } from 'react';
+import BusBody from './BusBody';
+import DoorGlass from './DoorGlass';
+import Doors from './Doors';
+import FrontMirror from './FrontMirror';
+import Road from './Road';
+import Wheels from './Wheels';
+import Windows from './Windows';
 
-const Bus = () => <div>
-	<div className="busBody"/>
-	<div className="frontWheel"/>
-	<div className="frontWheelInterior"/>
-	<div className="backWheel"/>
-	<div className="backWheelInterior"/>
-	<div className="frontDoor"/>
-	<div className="backDoor"/>
-	<div className="frontDoorGlass1"/>
-	<div className="frontDoorGlass2"/>
-	<div className="backDoorGlass1"/>
-	<div className="backDoorGlass2"/>
-	<div className="redLights"/>
-	<div className="frontGlass"/>
-	<div className="rearIndicator"/>
-	<div className="topDesign"/>
-	<div className="window1"/>
+// const busComponents = [
+// 	'redLights',
+// 	'rearIndicator',
+// 	'topDesign',
+// 	'luggageSecHandle',
+// ];
 
-</div>;
+const Bus = () =>
+	<div>
+		<Road/>
+		<BusBody/>
+		<Windows/>
+		<Doors/>
+		<DoorGlass/>
+		<Wheels/>
+		<FrontMirror/>
+	</div>;
 
 export default Bus;
