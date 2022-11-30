@@ -1,8 +1,8 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import WheelStyle from './Wheelstyle';
+import WheelStyle from './WheelStyle';
 
-const noOfWheels = 3;
+const noOfWheels = 2;
 const multiplier = 695;
 const margin = 245;
 const wheels =	range(0, noOfWheels).map((wheel) => ({

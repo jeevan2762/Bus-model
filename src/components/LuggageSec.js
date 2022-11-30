@@ -1,12 +1,12 @@
 import { React } from 'react';
 
-const luggageSecComponents = [
+const luggageSectionComponents = [
 	'luggageSection',
 	'luggageSecHandle',
 ];
 
-const LuggageSec = () =>
-	luggageSecComponents.map((comp, key) =>
+const LuggageSection = () =>
+	luggageSectionComponents.map((comp, key) =>
 		<div key={ key } className={ `${ comp }` }/>);
 
-export default LuggageSec;
+export default LuggageSection;
