@@ -42,22 +42,13 @@
 }
 
 .frontWheel{
-	// position: absolute;
-	// top: 440px;
-	// left: 220px;
-	// height: 120px;
-	 width: 100px;
-	border-radius: 75px;
+	 width: 80px;
+	border-radius: 100px;
 	background-color: white;
 	border: 35px solid black;
-	clip-path: circle(100% at 50% 50%);
 }
 
 .wheelInterior{
-	position: absolute;
-	top: 480px;
-	left: 261px;
-	height: 37px;
 	width: 37px;
 	border-radius: 35px;
 	background-color: grey;
@@ -86,11 +77,11 @@
 	border: 5px solid black;
 }
 
-.frontDoor{
-	position: absolute;
-	top: 300px;
-	left: 380px;
-	height: 185px;
+.door{
+	// position: absolute;
+	// top: 300px;
+	// left: 380px;
+	// height: 185px;
 	width: 115px;
 	background-color: seashell;
 	border: 5px solid black;

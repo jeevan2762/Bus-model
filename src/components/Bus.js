@@ -1,6 +1,6 @@
 import { React } from 'react';
 import BusBody from './BusBody';
-import Doors from './Doors';
+import FrontAndBackDoor from './FrontAndBackDoor';
 import FrontMirror from './FrontMirror';
 import Lights from './Lights';
 import LuggageSection from './LuggageSec';
@@ -13,7 +13,7 @@ const Bus = () =>
 		<Road/>
 		<BusBody/>
 		<Windows/>
-		<Doors/>
+		<FrontAndBackDoor/>
 		<Wheels/>
 		<FrontMirror/>
 		<LuggageSection/>
