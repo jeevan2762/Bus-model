@@ -42,18 +42,18 @@
 }
 
 .frontWheel{
-	position: absolute;
-	top: 440px;
-	left: 220px;
-	height: 120px;
-	width: 120px;
+	// position: absolute;
+	// top: 440px;
+	// left: 220px;
+	// height: 120px;
+	 width: 100px;
 	border-radius: 75px;
 	background-color: black;
 	border: 5px solid grey;
 	clip-path: circle(100% at 50% 50%);
 }
 
-.frontWheelInterior{
+.wheelInterior{
 	position: absolute;
 	top: 480px;
 	left: 261px;

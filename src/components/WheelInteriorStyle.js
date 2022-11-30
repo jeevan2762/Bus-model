@@ -1,15 +1,14 @@
 import { React } from 'react';
 
-const WindowStyle = ({ size, left, top, width }) =>
+const WheelInteriorStyle = ({ size, left, top }) =>
 	<div
 		style={ {
-			width: `${ width }px`,
 			height: `${ size }px`,
 			position: 'absolute',
 			left: `${ left }px`,
 			top: `${ top }px`,
 		} }
-		className="window"
+		className="WheelInterior"
 	/>;
 
-export default WindowStyle;
+export default WheelInteriorStyle;
