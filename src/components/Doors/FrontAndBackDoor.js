@@ -4,7 +4,7 @@ import RectangularDoor from './RectangularDoor';
 
 const noOfDoors = 2;
 const multiplier = 690;
-const margin = 410;
+const margin = 250;
 
 const doors =	range(0, noOfDoors).map((door) => ({
 	left: (door * multiplier) + margin,

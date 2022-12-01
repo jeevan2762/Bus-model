@@ -1,10 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import Bus from './components/Bus';
+import BusBody from './components/BusBody';
 
 const App = (context) =>
-	<div className="App" role="App">
-		<Bus { ...context }/>
+	<div className="backGround" role="App">
+		<BusBody{ ...context }/>
 	</div>;
 
 export default App;

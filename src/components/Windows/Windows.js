@@ -3,7 +3,7 @@ import { React } from 'react';
 import WindowStyle from './WindowStyle';
 
 const noOfWindows = 5;
-const multiplier = 270;
+const multiplier = 230;
 
 const windows =	range(1, noOfWindows).map((window) => ({
 	left: window * multiplier,
