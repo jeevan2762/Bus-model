@@ -1,13 +1,10 @@
 import { React } from 'react';
 
-const WindowStyle = ({ size, left, top, width }) =>
+const WindowStyle = ({ left }) =>
 	<div
 		style={ {
-			width: `${ width }px`,
-			height: `${ size }px`,
 			position: 'absolute',
 			left: `${ left }px`,
-			top: `${ top }px`,
 		} }
 		className="window"
 	/>;

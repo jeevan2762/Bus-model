@@ -1,12 +1,10 @@
 import { React } from 'react';
 
-const WheelInteriorStyle = ({ size, left, top }) =>
+const WheelInteriorStyle = ({ left }) =>
 	<div
 		style={ {
-			height: `${ size }px`,
 			position: 'absolute',
 			left: `${ left }px`,
-			top: `${ top }px`,
 		} }
 		className="WheelInterior"
 	/>;

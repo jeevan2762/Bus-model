@@ -1,12 +1,10 @@
 import { React } from 'react';
 
-const WheelStyle = ({ size, left, top }) =>
+const WheelStyle = ({ left }) =>
 	<div
 		style={ {
-			height: `${ size }px`,
 			position: 'absolute',
 			left: `${ left }px`,
-			top: `${ top }px`,
 		} }
 		className="wheelExterior"
 	/>;
