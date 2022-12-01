@@ -8,7 +8,7 @@ const WheelStyle = ({ size, left, top }) =>
 			left: `${ left }px`,
 			top: `${ top }px`,
 		} }
-		className="frontWheel"
+		className="wheelExterior"
 	/>;
 
 export default WheelStyle;

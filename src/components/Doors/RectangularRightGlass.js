@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const RightDoorGlassStyle = ({ left }) =>
+const RectangularRightGlass = ({ left }) =>
 	<div
 		style={ {
 
@@ -11,4 +11,4 @@ const RightDoorGlassStyle = ({ left }) =>
 		className="doorGlass"
 	/>;
 
-export default RightDoorGlassStyle;
+export default RectangularRightGlass;
