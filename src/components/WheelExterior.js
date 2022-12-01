@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import WheelStyle from './WheelStyle';
+import WheelStyle from '../core/WheelStyle';
 
 const noOfWheels = 2;
 const multiplier = 695;

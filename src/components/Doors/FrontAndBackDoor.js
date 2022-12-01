@@ -7,9 +7,7 @@ const multiplier = 690;
 const margin = 410;
 
 const doors =	range(0, noOfDoors).map((door) => ({
-	size: 180,
 	left: (door * multiplier) + margin,
-	top: 310,
 }));
 
 const FrontAndBackDoor = () => doors.map((door, key) =>

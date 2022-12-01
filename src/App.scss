@@ -79,9 +79,9 @@
 
 .door{
 	// position: absolute;
-	// top: 300px;
 	// left: 380px;
-	// height: 185px;
+	 height: 180px;
+	top: 310px;
 	width: 115px;
 	background-color: seashell;
 	border: 5px solid black;
@@ -97,11 +97,11 @@
 	border: 5px solid black;
 }
 
-.frontDoorGlass1{
-	position: absolute;
-	top: 309px;
-	left: 388px;
-	height: 175px;
+.doorGlass{
+	// position: absolute;
+	// left: 388px;
+	top: 318px;
+	height: 172px;
 	width: 50px;
 	background-color:lightblue;
 	border: 1px outset black;
