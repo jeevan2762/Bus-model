@@ -1,12 +1,12 @@
 import { React } from 'react';
 
-const LeftDoorGlassStyle = ({ left }) =>
+const RectangularDoor = ({ left }) =>
 	<div
 		style={ {
 			position: 'absolute',
 			left: `${ left }px`,
 		} }
-		className="doorGlass"
+		className="door"
 	/>;
 
-export default LeftDoorGlassStyle;
+export default RectangularDoor;

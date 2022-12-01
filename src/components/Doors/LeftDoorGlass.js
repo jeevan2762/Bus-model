@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import LeftDoorGlassStyle from './LeftDoorGlassStyle';
+import RectangularLeftGlass from './RectangularLeftGlass';
 
 const noOfDoorGlasses = 2;
 const multiplier = 690;
@@ -11,6 +11,6 @@ const doorGlasses =	range(0, noOfDoorGlasses).map((doorGlass) => ({
 }));
 
 const LeftDoorGlass = () => doorGlasses.map((doorGlass, key) =>
-	<LeftDoorGlassStyle key={ key } { ...doorGlass }/>);
+	<RectangularLeftGlass key={ key } { ...doorGlass }/>);
 
 export default LeftDoorGlass;

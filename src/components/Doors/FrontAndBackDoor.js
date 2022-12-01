@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import DoorStyle from './FrontAndBackDoorStyles';
+import RectangularDoor from './RectangularDoor';
 
 const noOfDoors = 2;
 const multiplier = 690;
@@ -11,6 +11,6 @@ const doors =	range(0, noOfDoors).map((door) => ({
 }));
 
 const FrontAndBackDoor = () => doors.map((door, key) =>
-	<DoorStyle key={ key } { ...door }/>);
+	<RectangularDoor key={ key } { ...door }/>);
 
 export default FrontAndBackDoor;

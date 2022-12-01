@@ -1,6 +1,6 @@
 import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import RightDoorGlassStyle from './LeftDoorGlassStyle';
+import RightDoorGlassStyle from './RectangularLeftGlass';
 
 const noOfDoorGlasses = 2;
 const multiplier = 690;
