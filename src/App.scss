@@ -20,15 +20,16 @@
 	left: 100px;
 	height: 350px;
 	width: 1200px;
-	border-radius: 20px;
 	background-color: wheat;
-	clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
+	border-radius: 153px 5px 5px 15px;
+	//clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	border: 2px solid black;
+
 }
 
 .wheelExterior{
 	height: 80px;
-	top: 440px;
+	top: 290px;
 	width: 80px;
 	border-radius: 100px;
 	background-color: white;
@@ -45,15 +46,15 @@
 }
 
 .door{
-	height: 170px;
-	top: 160px;
+	 height: 180px;
+	top: 156px;
 	width: 115px;
 	background-color: seashell;
 	border: 5px solid black;
 }
 
 .doorGlass{
-	top: 163px;
+	top: 164px;
 	height: 172px;
 	width: 50px;
 	background-color:lightblue;
@@ -62,8 +63,8 @@
 
 .redLights{
 	position: absolute;
-	top: 390px;
-	left: 1300px;
+	top: 270px;
+	left: 1200px;
 	height: 35px;
 	width: 10px;
 	background-color: red;
@@ -73,30 +74,30 @@
 
 .rearIndicator{
 	position: absolute;
-	top: 427px;
-	left: 1300px;
+	top: 307px;
+	left: 1200px;
 	height: 35px;
 	width: 10px;
 	background-color: orangered;
 	border: 1px solid black;
 }
 
-.frontGlass{
+.frontGlass {
 	position: absolute;
-	top: 0px;
-	left: 29px;
-	height: 200px;
-	width: 60px;
+	left: 0%;
+	top: 10%;
+	border-radius: 88px 0px 0px 0px;
+	width: 90px;
+	height: 136px;
 	background-color: lightblue;
-	border-radius: 5px;
-	border: 1px solid black;
-	clip-path: polygon(75% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(31% 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 53%);
+	border: 2px solid black;
 }
 
 .luggageSection{
 	position: absolute;
-	top: 380px;
-	left: 690px;
+	top: 239px;
+	left: 585px;
 	height: 100px;
 	width: 200px;
 	background-color: lightblue;
@@ -105,15 +106,15 @@
 
 .luggageSecHandle{
 	position: absolute;
-  top: 459px;
-  left: 770px;
+  top: 318px;
+  left: 666px;
   height: 10px;
   width: 50px;
 	background-color: black;
 }
 
 .window{
-  top: 25px;
+  top: 20px;
   height: 100px;
   width: 170px;
   background-color: lightblue;

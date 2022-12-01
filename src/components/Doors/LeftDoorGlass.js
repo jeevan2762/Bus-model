@@ -4,7 +4,7 @@ import RectangularLeftGlass from './RectangularLeftGlass';
 
 const noOfDoorGlasses = 2;
 const multiplier = 690;
-const margin = 418;
+const margin = 308;
 
 const doorGlasses =	range(0, noOfDoorGlasses).map((doorGlass) => ({
 	left: (doorGlass * multiplier) + margin,

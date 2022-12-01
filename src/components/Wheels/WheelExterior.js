@@ -4,7 +4,7 @@ import WheelStyle from './WheelStyle';
 
 const noOfWheels = 2;
 const multiplier = 695;
-const margin = 225;
+const margin = 125;
 
 const wheels =	range(0, noOfWheels).map((wheel) => ({
 	left: (wheel * multiplier) + margin,
