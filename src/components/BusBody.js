@@ -1,11 +1,7 @@
 import { React } from 'react';
 
-const busBodyComponents = [
-	'busBody',
-];
+const BusBody = ({ config }) =>
 
-const BusBody = () =>
-	busBodyComponents.map((body, key) =>
-		<div key={ key } className={ `${ body }` }/>);
+	<div className="busBody" style={ { backgroundColor: config.busColor } }/>;
 
 export default BusBody;

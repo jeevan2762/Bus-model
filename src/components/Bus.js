@@ -8,10 +8,10 @@ import Road from './Road';
 import Wheels from './Wheels';
 import Windows from './Windows';
 
-const Bus = () =>
+const Bus = (context) =>
 	<div>
 		<Road/>
-		<BusBody/>
+		<BusBody { ...context }/>
 		<Windows/>
 		<FrontAndBackDoor/>
 		<Wheels/>
