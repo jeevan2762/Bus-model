@@ -5,13 +5,13 @@ import RearIndicator from './RearIndicator';
 import LuggageSection from './LuggageSection';
 import LuggageSectionHandle from './LuggageSectionHandle';
 
-const OtherParts = () =>
+const OtherParts = (context) =>
 	<div>
-		<FrontMirror/>
-		<RedLights/>
-		<RearIndicator/>
-		<LuggageSection/>
-		<LuggageSectionHandle/>
+		<FrontMirror { ...context }/>
+		<RedLights { ...context }/>
+		<RearIndicator { ...context }/>
+		<LuggageSection { ...context }/>
+		<LuggageSectionHandle { ...context }/>
 	</div>;
 
 export default OtherParts;

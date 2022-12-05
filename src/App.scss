@@ -4,7 +4,7 @@
 
 .backGround{
 	position: absolute;
-	background-image: linear-gradient(mediumorchid,orchid, seashell);
+	background: linear-gradient(violet, mediumpurple,	lightblue,	lightgreen,	wheat, lightsalmon, lightcoral);
 	width: 100vw;
 	height: 100vh;
 }
@@ -15,16 +15,9 @@
 }
 
 .busBody{
-	position: absolute;
-	top: 150px;
-	left: 100px;
-	height: 350px;
-	width: 1200px;
 	background-color: wheat;
 	border-radius: 153px 5px 5px 15px;
-	//clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	border: 2px solid black;
-
 }
 
 .wheelExterior{
@@ -63,10 +56,6 @@
 
 .redLights{
 	position: absolute;
-	top: 270px;
-	left: 1200px;
-	height: 35px;
-	width: 10px;
 	background-color: red;
 	border: 1px solid black;
 	border-radius: 2px;
@@ -74,21 +63,13 @@
 
 .rearIndicator{
 	position: absolute;
-	top: 307px;
-	left: 1200px;
-	height: 35px;
-	width: 10px;
 	background-color: orangered;
 	border: 1px solid black;
 }
 
 .frontGlass {
 	position: absolute;
-	left: 0%;
-	top: 10%;
 	border-radius: 88px 0px 0px 0px;
-	width: 90px;
-	height: 136px;
 	background-color: lightblue;
 	clip-path: polygon(31% 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 53%);
 	border: 2px solid black;
@@ -96,20 +77,12 @@
 
 .luggageSection{
 	position: absolute;
-	top: 239px;
-	left: 585px;
-	height: 100px;
-	width: 200px;
 	background-color: lightblue;
 	border: 3px outset black;
 }
 
 .luggageSecHandle{
 	position: absolute;
-  top: 318px;
-  left: 666px;
-  height: 10px;
-  width: 50px;
 	background-color: black;
 }
 
