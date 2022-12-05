@@ -8,6 +8,7 @@ const WheelInteriorStyle = ({ data }) =>
 			top: `${ data.top }px`,
 			height: `${ data.height }px`,
 			width: `${ data.width }px`,
+			borderRadius: `${ data.borderRadius }px`,
 		} }
 		className="WheelInterior"
 	/>;

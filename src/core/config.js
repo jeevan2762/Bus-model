@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import { rndValue } from '@laufire/utils/random';
 import { range } from '@laufire/utils/collection';
 
@@ -26,91 +27,107 @@ const noOfWheelInteriors = 3;
 const wheelInteriorMultiplier = 710;
 const wheelInteriorMargin = 230;
 
+const size = 1;
+
 const config = {
 	busColor: rndValue(colors),
 
 	busBody: {
-		top: 150,
-		left: 100,
-		height: 350,
-		width: 1200,
+		top: 150 * size,
+		left: 100 * size,
+		height: 350 * size,
+		width: 1200 * size,
+		borderRadius:
+		{
+			topLeft: 153 * size,
+			topRight: 5 * size,
+			bottomRight: 5 * size,
+			bottomLeft: 15 * size,
+		},
 	},
 
 	redLights: {
-		top: 270,
-		left: 1200,
-		height: 35,
-		width: 10,
+		top: 270 * size,
+		left: 1200 * size,
+		height: 35 * size,
+		width: 10 * size,
+		borderRadius: 2 * size,
 	},
 
 	rearIndicator: {
-		top: 307,
-		left: 1200,
-		height: 35,
-		width: 10,
+		top: 307 * size,
+		left: 1200 * size,
+		height: 35 * size,
+		width: 10 * size,
 	},
 
 	frontGlass: {
-		top: 40,
-		left: 0,
-		width: 90,
-		height: 136,
+		top: 40 * size,
+		left: 0 * size,
+		width: 90 * size,
+		height: 136 * size,
+		borderTopLeftRadius: 90 * size,
 	},
 
 	luggageSection: {
-		top: 239,
-		left: 585,
-		height: 100,
-		width: 200,
+		top: 239 * size,
+		left: 585 * size,
+		height: 100 * size,
+		width: 200 * size,
 	},
 
 	luggageSecHandle: {
-		top: 318,
-		left: 666,
-		height: 10,
-		width: 50,
+		top: 318 * size,
+		left: 666 * size,
+		height: 10 * size,
+		width: 50 * size,
 	},
 
 	windows: range(1, noOfWindows).map((window) => ({
-		top: 20,
-		height: 100,
-		width: 170,
-		left: window * multiplier,
+		top: 20 * size,
+		height: 100 * size,
+		width: 170 * size,
+		left: (window * multiplier) * size,
+		borderRadius: 5 * size,
 	})),
 
 	doors: range(0, noOfDoors).map((door) => ({
-		top: 156,
-		left: (door * doorMultiplier) + margin,
-		height: 180,
-		width: 115,
+		top: 156 * size,
+		left: ((door * doorMultiplier) + margin) * size,
+		height: 180 * size,
+		width: 115 * size,
 	})),
 
 	rightDoorGlass: range(0, noOfRightDoorGlasses).map((doorGlass) => ({
-		left: (doorGlass * rightGlassMultiplier) + rightGlassMargin,
-		top: 164,
-		height: 172,
-		width: 50,
+		left: ((doorGlass * rightGlassMultiplier) + rightGlassMargin) * size,
+		top: 164 * size,
+		height: 172 * size,
+		width: 50 * size,
 	})),
 
 	leftDoorGlass: range(0, noOfLeftDoorGlasses).map((doorGlass) => ({
-		left: (doorGlass * leftGlassMultiplier) + leftGlassMargin,
-		top: 164,
-		height: 172,
-		width: 50,
+		left: ((doorGlass * leftGlassMultiplier) + leftGlassMargin) * size,
+		top: 164 * size,
+		height: 172 * size,
+		width: 50 * size,
 	})),
 
 	wheelExterior: range(0, noOfExteriorWheels).map((wheel) => ({
-		left: (wheel * wheelExteriorMultiplier) + wheelExteriorMargin,
-		height: 80,
-		top: 290,
-		width: 80,
+		left: ((wheel * wheelExteriorMultiplier) + wheelExteriorMargin) * size,
+		height: 80 * size,
+		top: 290 * size,
+		width: 80 * size,
+		borderRadius: 100 * size,
 	})),
 
 	wheelInterior: range(0, noOfWheelInteriors).map((wheelInterior) => ({
-		left: (wheelInterior * wheelInteriorMultiplier) + wheelInteriorMargin,
-		height: 70,
-		top: 440,
-		width: 37,
+		// eslint-disable-next-line max-len
+		left: ((wheelInterior * wheelInteriorMultiplier) + wheelInteriorMargin) * size,
+		height: 70 * size,
+		top: 440 * size,
+		width: 37 * size,
+		borderRadius: 35 * size,
+
 	})),
 
 };

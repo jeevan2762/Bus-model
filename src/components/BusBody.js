@@ -5,7 +5,8 @@ import Wheels from './Wheels/Wheels';
 import Windows from './Windows/Windows';
 
 const style = (context) => {
-	const { config: { busBody: { top, left, height, width }}} = context;
+	const { config:
+		{ busBody: { top, left, height, width, borderRadius }}} = context;
 
 	return {
 		top: `${ top }px`,
@@ -13,6 +14,10 @@ const style = (context) => {
 		height: `${ height }px`,
 		width: `${ width }px`,
 		position: 'absolute',
+		borderTopLeftRadius: `${ borderRadius.topLeft }px`,
+		borderTopRightRadius: `${ borderRadius.topRight }px`,
+		borderBottomRightRadius: `${ borderRadius.bottomRight }px`,
+		borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
 	};
 };
 

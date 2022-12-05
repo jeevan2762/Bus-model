@@ -1,7 +1,8 @@
 import { React } from 'react';
 
 const RedLights = (context) => {
-	const { config: { redLights: { top, left, height, width }}} = context;
+	const { config:
+		{ redLights: { top, left, height, width, borderRadius }}} = context;
 
 	return (
 		<div
@@ -11,6 +12,7 @@ const RedLights = (context) => {
 				left: `${ left }px`,
 				height: `${ height }px`,
 				width: `${ width }px`,
+				borderRadius: `${ borderRadius }px`,
 			} }
 		/>);
 };

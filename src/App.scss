@@ -15,27 +15,21 @@
 }
 
 .busBody{
-	background-color: wheat;
-	border-radius: 153px 5px 5px 15px;
+	background-color: mediumorchid;
 	border: 2px solid black;
 }
 
 .wheelExterior{
-	border-radius: 100px;
 	background-color: white;
 	border: 35px solid black;
 }
 
 .wheelInterior{
-	border-radius: 35px;
 	background-color: grey;
 	border: 5px solid black;
 }
 
 .door{
-	 height: 180px;
-	top: 156px;
-	width: 115px;
 	background-color: seashell;
 	border: 5px solid black;
 }
@@ -49,7 +43,6 @@
 	position: absolute;
 	background-color: red;
 	border: 1px solid black;
-	border-radius: 2px;
 }
 
 .rearIndicator{
@@ -60,9 +53,7 @@
 
 .frontGlass {
 	position: absolute;
-	border-radius: 88px 0px 0px 0px;
 	background-color: lightblue;
-	clip-path: polygon(31% 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 53%);
 	border: 2px solid black;
 }
 
@@ -79,7 +70,6 @@
 
 .window{
   background-color: lightblue;
-  border-radius: 5px;
   border: 2px solid black;
 }
 
