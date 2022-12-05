@@ -18,6 +18,14 @@ const noOfLeftDoorGlasses = 2;
 const leftGlassMultiplier = 690;
 const leftGlassMargin = 308;
 
+const noOfExteriorWheels = 2;
+const wheelExteriorMultiplier = 695;
+const wheelExteriorMargin = 125;
+
+const noOfWheelInteriors = 3;
+const wheelInteriorMultiplier = 710;
+const wheelInteriorMargin = 230;
+
 const config = {
 	busColor: rndValue(colors),
 
@@ -89,6 +97,20 @@ const config = {
 		top: 164,
 		height: 172,
 		width: 50,
+	})),
+
+	wheelExterior: range(0, noOfExteriorWheels).map((wheel) => ({
+		left: (wheel * wheelExteriorMultiplier) + wheelExteriorMargin,
+		height: 80,
+		top: 290,
+		width: 80,
+	})),
+
+	wheelInterior: range(0, noOfWheelInteriors).map((wheelInterior) => ({
+		left: (wheelInterior * wheelInteriorMultiplier) + wheelInteriorMargin,
+		height: 70,
+		top: 440,
+		width: 37,
 	})),
 
 };
