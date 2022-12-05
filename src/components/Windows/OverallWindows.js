@@ -1,11 +1,9 @@
 import { React } from 'react';
-import WindowBorder from './WindowBorder';
 import Windows from './Windows';
 
-const OverallWindows = () =>
+const OverallWindows = (context) =>
 	<div>
-		<WindowBorder/>
-		<Windows/>
+		<Windows { ...context }/>
 	</div>;
 
 export default OverallWindows;

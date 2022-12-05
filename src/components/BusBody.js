@@ -18,9 +18,9 @@ const style = (context) => {
 
 const BusBody = (context) =>
 	<div className="busBody" style={ style(context) }>
-		<Windows/>
-		<Doors/>
-		<Wheels/>
+		<Windows { ...context }/>
+		<Doors { ...context }/>
+		<Wheels { ...context }/>
 		<OtherParts { ...context }/>
 	</div>;
 

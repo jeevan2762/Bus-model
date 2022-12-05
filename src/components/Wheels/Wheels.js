@@ -2,10 +2,10 @@ import { React } from 'react';
 import WheelExterior from './WheelExterior';
 import WheelInterior from './WheelInterior';
 
-const Wheels = () =>
+const Wheels = (context) =>
 	<div>
-		<WheelExterior/>
-		<WheelInterior/>
+		<WheelExterior { ...context }/>
+		<WheelInterior { ...context }/>
 	</div>;
 
 export default Wheels;
