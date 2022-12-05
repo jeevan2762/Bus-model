@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const LuggageSectionHandle = (context) => {
 	const { config: { luggageSecHandle:
-		{ top, left, height, width }}} = context;
+		{ top, left, height, width, border }}} = context;
 
 	return (
 		<div
@@ -12,6 +12,7 @@ const LuggageSectionHandle = (context) => {
 				left: `${ left }px`,
 				height: `${ height }px`,
 				width: `${ width }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };

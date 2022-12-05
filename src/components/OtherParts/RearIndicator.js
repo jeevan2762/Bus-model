@@ -1,7 +1,8 @@
 import { React } from 'react';
 
 const RearIndicator = (context) => {
-	const { config: { rearIndicator: { top, left, height, width }}} = context;
+	const { config: { rearIndicator:
+		{ top, left, height, width, border }}} = context;
 
 	return (
 		<div
@@ -11,6 +12,7 @@ const RearIndicator = (context) => {
 				left: `${ left }px`,
 				height: `${ height }px`,
 				width: `${ width }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };

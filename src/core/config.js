@@ -37,6 +37,7 @@ const config = {
 		left: 100 * size,
 		height: 350 * size,
 		width: 1200 * size,
+		border: 2 * size,
 		borderRadius:
 		{
 			topLeft: 153 * size,
@@ -52,6 +53,7 @@ const config = {
 		height: 35 * size,
 		width: 10 * size,
 		borderRadius: 2 * size,
+		border: 1 * size,
 	},
 
 	rearIndicator: {
@@ -59,6 +61,7 @@ const config = {
 		left: 1200 * size,
 		height: 35 * size,
 		width: 10 * size,
+		border: 1 * size,
 	},
 
 	frontGlass: {
@@ -67,6 +70,7 @@ const config = {
 		width: 90 * size,
 		height: 136 * size,
 		borderTopLeftRadius: 90 * size,
+		border: 2 * size,
 	},
 
 	luggageSection: {
@@ -74,6 +78,7 @@ const config = {
 		left: 585 * size,
 		height: 100 * size,
 		width: 200 * size,
+		border: 3 * size,
 	},
 
 	luggageSecHandle: {
@@ -89,6 +94,7 @@ const config = {
 		width: 170 * size,
 		left: (window * multiplier) * size,
 		borderRadius: 5 * size,
+		border: 2 * size,
 	})),
 
 	doors: range(0, noOfDoors).map((door) => ({
@@ -96,6 +102,7 @@ const config = {
 		left: ((door * doorMultiplier) + margin) * size,
 		height: 180 * size,
 		width: 115 * size,
+		border: 5 * size,
 	})),
 
 	rightDoorGlass: range(0, noOfRightDoorGlasses).map((doorGlass) => ({
@@ -103,6 +110,7 @@ const config = {
 		top: 164 * size,
 		height: 172 * size,
 		width: 50 * size,
+		border: 1 * size,
 	})),
 
 	leftDoorGlass: range(0, noOfLeftDoorGlasses).map((doorGlass) => ({
@@ -110,6 +118,7 @@ const config = {
 		top: 164 * size,
 		height: 172 * size,
 		width: 50 * size,
+		border: 1 * size,
 	})),
 
 	wheelExterior: range(0, noOfExteriorWheels).map((wheel) => ({
@@ -118,16 +127,17 @@ const config = {
 		top: 290 * size,
 		width: 80 * size,
 		borderRadius: 100 * size,
+		border: 35 * size,
 	})),
 
 	wheelInterior: range(0, noOfWheelInteriors).map((wheelInterior) => ({
-		// eslint-disable-next-line max-len
-		left: ((wheelInterior * wheelInteriorMultiplier) + wheelInteriorMargin) * size,
+		left: ((wheelInterior * wheelInteriorMultiplier)
+		+ wheelInteriorMargin) * size,
 		height: 70 * size,
 		top: 440 * size,
 		width: 37 * size,
 		borderRadius: 35 * size,
-
+		border: 5 * size,
 	})),
 
 };

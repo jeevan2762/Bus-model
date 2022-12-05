@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const FrontMirror = (context) => {
 	const { config:	{ frontGlass:
-		{ top, left, height, width, borderTopLeftRadius }}} = context;
+		{ top, left, height, width, borderTopLeftRadius, border }}} = context;
 
 	return (
 		<div
@@ -13,6 +13,8 @@ const FrontMirror = (context) => {
 				height: `${ height }px`,
 				width: `${ width }px`,
 				borderTopLeftRadius: `${ borderTopLeftRadius }px`,
+				border: `${ border }px solid black`,
+
 			} }
 		/>);
 };

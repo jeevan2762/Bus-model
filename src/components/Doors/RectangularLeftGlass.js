@@ -8,6 +8,8 @@ const RectangularLeftGlass = ({ data }) =>
 			top: `${ data.top }px`,
 			height: `${ data.height }px`,
 			width: `${ data.width }px`,
+			borderRadius: `${ data.borderRadius }px`,
+			border: `${ data.border }px solid black`,
 		} }
 		className="doorGlass"
 	/>;

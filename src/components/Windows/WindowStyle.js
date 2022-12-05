@@ -9,6 +9,7 @@ const WindowStyle = ({ data }) =>
 				top: `${ data.top }px`,
 				height: `${ data.height }px`,
 				width: `${ data.width }px`,
+				border: `${ data.border }px solid black`,
 				borderRadius: `${ data.borderRadius }px`,
 			}
 		}
