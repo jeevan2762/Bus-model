@@ -1,14 +1,7 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
 import WindowStyle from './WindowStyle';
 
-const noOfWindows = 5;
-const multiplier = 230;
-
-const windows =	range(1, noOfWindows).map((window) => ({
-	left: window * multiplier,
-}));
-const Windows = () => windows.map((window, key) =>
-	<WindowStyle key={ key } { ...window }/>);
+const Windows = (context) => context.config.windows.map((window, key) =>
+	<WindowStyle key={ key } { ...{ ...context, data: window } }/>);
 
 export default Windows;
