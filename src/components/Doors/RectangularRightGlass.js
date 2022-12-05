@@ -1,11 +1,14 @@
 import { React } from 'react';
 
-const RectangularRightGlass = ({ left }) =>
+const RectangularRightGlass = ({ data }) =>
 	<div
 		style={ {
 
 			position: 'absolute',
-			left: `${ left }px`,
+			left: `${ data.left }px`,
+			top: `${ data.top }px`,
+			height: `${ data.height }px`,
+			width: `${ data.width }px`,
 
 		} }
 		className="doorGlass"

@@ -1,16 +1,11 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
 import RectangularLeftGlass from './RectangularLeftGlass';
 
-const noOfDoorGlasses = 2;
-const multiplier = 690;
-const margin = 308;
-
-const doorGlasses =	range(0, noOfDoorGlasses).map((doorGlass) => ({
-	left: (doorGlass * multiplier) + margin,
-}));
-
-const LeftDoorGlass = () => doorGlasses.map((doorGlass, key) =>
-	<RectangularLeftGlass key={ key } { ...doorGlass }/>);
+const LeftDoorGlass = (context) =>
+	context.config.leftDoorGlass.map((doorGlass, key) =>
+		<RectangularLeftGlass
+			key={ key }
+			{ ...{ ...context, data: doorGlass } }
+		/>);
 
 export default LeftDoorGlass;

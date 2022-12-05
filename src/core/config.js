@@ -6,6 +6,18 @@ const colors = ['lightgreen', 'lightcoral', 'cornflowerblue', 'wheat'];
 const noOfWindows = 5;
 const multiplier = 230;
 
+const noOfDoors = 2;
+const doorMultiplier = 690;
+const margin = 300;
+
+const noOfRightDoorGlasses = 2;
+const rightGlassMultiplier = 690;
+const rightGlassMargin = 365;
+
+const noOfLeftDoorGlasses = 2;
+const leftGlassMultiplier = 690;
+const leftGlassMargin = 308;
+
 const config = {
 	busColor: rndValue(colors),
 
@@ -56,6 +68,27 @@ const config = {
 		height: 100,
 		width: 170,
 		left: window * multiplier,
+	})),
+
+	doors: range(0, noOfDoors).map((door) => ({
+		top: 156,
+		left: (door * doorMultiplier) + margin,
+		height: 180,
+		width: 115,
+	})),
+
+	rightDoorGlass: range(0, noOfRightDoorGlasses).map((doorGlass) => ({
+		left: (doorGlass * rightGlassMultiplier) + rightGlassMargin,
+		top: 164,
+		height: 172,
+		width: 50,
+	})),
+
+	leftDoorGlass: range(0, noOfLeftDoorGlasses).map((doorGlass) => ({
+		left: (doorGlass * leftGlassMultiplier) + leftGlassMargin,
+		top: 164,
+		height: 172,
+		width: 50,
 	})),
 
 };
