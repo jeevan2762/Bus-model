@@ -1,7 +1,7 @@
 import { React } from 'react';
 
 const RearIndicator = (context) => {
-	const { config: { rearIndicator:
+	const { dimensions: { rearIndicator:
 		{ top, left, height, width, border }}} = context;
 
 	return (

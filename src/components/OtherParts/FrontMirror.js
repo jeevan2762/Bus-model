@@ -1,7 +1,7 @@
 import { React } from 'react';
 
 const FrontMirror = (context) => {
-	const { config:	{ frontGlass:
+	const { dimensions:	{ frontGlass:
 		{ top, left, height, width, borderTopLeftRadius, border }}} = context;
 
 	return (

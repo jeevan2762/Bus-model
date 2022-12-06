@@ -5,7 +5,7 @@ import Wheels from './Wheels/Wheels';
 import Windows from './Windows/Windows';
 
 const style = (context) => {
-	const { config:	{ busBody:
+	const { dimensions:	{ busBody:
 		{ top, left, height, width, borderRadius, border }}} = context;
 
 	return {

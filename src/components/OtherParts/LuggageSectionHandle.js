@@ -1,7 +1,7 @@
 import { React } from 'react';
 
 const LuggageSectionHandle = (context) => {
-	const { config: { luggageSecHandle:
+	const { dimensions: { luggageSecHandle:
 		{ top, left, height, width, border }}} = context;
 
 	return (
