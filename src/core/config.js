@@ -1,4 +1,3 @@
-
 const config = {
 	size: 1,
 };
