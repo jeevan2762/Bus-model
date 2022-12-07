@@ -11,7 +11,6 @@ const style = (context) => {
 			direction, animation }}} = context;
 
 	return {
-		position: 'absolute',
 		top: `${ top }px`,
 		left: `${ left }px`,
 		height: `${ height }px`,

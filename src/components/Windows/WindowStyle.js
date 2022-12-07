@@ -4,7 +4,6 @@ const WindowStyle = ({ data }) =>
 	<div
 		style={
 			{
-				position: 'absolute',
 				top: `${ data.top }px`,
 				left: `${ data.left }px`,
 				height: `${ data.height }px`,

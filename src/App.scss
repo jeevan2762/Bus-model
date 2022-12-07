@@ -2,64 +2,84 @@
 	text-align: center;
 }
 
-.backGround{
+.backGround {
 	position: absolute;
-	background: linear-gradient(violet, mediumpurple,	lightblue,	lightgreen,	wheat, lightsalmon, lightcoral);
+	background: linear-gradient(violet, mediumpurple, lightblue, lightgreen, wheat, lightsalmon, lightcoral);
 	width: 100vw;
 	height: 100vh;
 }
 
-.bus{
+.bus {
 	position: absolute;
 	left: 10px;
 }
 
-.busBody{
+.busBody {
+	position: absolute;
 	background-color: mediumorchid;
 	animation: moveBus 20s infinite linear;
 	transform: scaleX(-1);
 }
 
 
-.wheelExterior{
+.wheelExterior {
+	position: absolute;
 	background-color: white;
 	animation: rotate 2s infinite linear;
 }
 
-.wheelInterior{
+.wheelInterior {
+	position: absolute;
 	background-color: grey;
 }
 
 @keyframes rotate {
-	from {transform: rotate(0deg)}
-	to {transform: rotate(360deg)}
+	from {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(360deg)
+	}
 }
 
 @keyframes moveBus {
-	from {transform: translate(0px,0px)scaleX(-1)}
-	to {transform: translate(400px,0px)scaleX(-1)}
+	from {
+		transform: translate(0px, 0px)scaleX(-1)
+	}
+
+	to {
+		transform: translate(400px, 0px)scaleX(-1)
+	}
 }
 
 @keyframes moveBusRtl {
-	from {transform: translate(400px,0px)}
-	to {transform: translate(0px,0px)}
+	from {
+		transform: translate(400px, 0px)
+	}
+
+	to {
+		transform: translate(0px, 0px)
+	}
 }
 
 
-.door{
+.door {
+	position: absolute;
 	background-color: seashell;
 }
 
-.doorGlass{
-	background-color:lightblue;
+.doorGlass {
+	position: absolute;
+	background-color: lightblue;
 }
 
-.redLights{
+.redLights {
 	position: absolute;
 	background-color: red;
 }
 
-.rearIndicator{
+.rearIndicator {
 	position: absolute;
 	background-color: orangered;
 }
@@ -69,19 +89,17 @@
 	background-color: lightblue;
 }
 
-.luggageSection{
+.luggageSection {
 	position: absolute;
 	background-color: lightblue;
 }
 
-.luggageSecHandle{
+.luggageSecHandle {
 	position: absolute;
 	background-color: black;
 }
 
-.window{
-  background-color: lightblue;
+.window {
+	position: absolute;
+	background-color: lightblue;
 }
-
-
-
