@@ -4,8 +4,8 @@ const RectangularRightGlass = ({ data }) =>
 	<div
 		style={ {
 			position: 'absolute',
-			left: `${ data.left }px`,
 			top: `${ data.top }px`,
+			left: `${ data.left }px`,
 			height: `${ data.height }px`,
 			width: `${ data.width }px`,
 			borderRadius: `${ data.borderRadius }px`,

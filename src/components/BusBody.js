@@ -5,20 +5,24 @@ import Wheels from './Wheels/Wheels';
 import Windows from './Windows/Windows';
 
 const style = (context) => {
-	const { dimensions:	{ busBody:
-		{ top, left, height, width, borderRadius, border }}} = context;
+	const { dimensions: { busBody:
+		{ top, left, height, width,
+			borderRadius, border,
+			direction, animation }}} = context;
 
 	return {
+		position: 'absolute',
 		top: `${ top }px`,
 		left: `${ left }px`,
 		height: `${ height }px`,
 		width: `${ width }px`,
-		position: 'absolute',
 		borderTopLeftRadius: `${ borderRadius.topLeft }px`,
 		borderTopRightRadius: `${ borderRadius.topRight }px`,
 		borderBottomRightRadius: `${ borderRadius.bottomRight }px`,
 		borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
 		border: `${ border }px solid black`,
+		transform: `scaleX${ direction }`,
+		animation: `${ animation } 20s infinite linear `,
 	};
 };
 

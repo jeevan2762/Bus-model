@@ -4,10 +4,14 @@ import BusBody from './components/BusBody';
 import getDimensions from './services/getDimensions';
 
 const App = (context) => {
-	const { config: { size }} = context;
+	const { config } = context;
 
 	return <div className="backGround" role="App">
-		<BusBody { ...{ ...context, dimensions: getDimensions(size) } }/>
+		{config.buses.map((data, key) =>
+			<BusBody
+				key={ key }
+				{ ...{ ...context, dimensions: getDimensions(data) } }
+			/>)}
 	</div>;
 };
 
