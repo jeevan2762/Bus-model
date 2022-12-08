@@ -8,7 +8,7 @@ const style = (context) => {
 	const { dimensions: { busBody:
 		{ top, left, height, width,
 			borderRadius, border,
-			direction, animation }}} = context;
+			direction, animation, backgroundColor }}} = context;
 
 	return {
 		top: `${ top }px`,
@@ -22,6 +22,7 @@ const style = (context) => {
 		border: `${ border }px solid black`,
 		transform: `scaleX${ direction }`,
 		animation: `${ animation } 20s infinite linear `,
+		backgroundColor: backgroundColor,
 	};
 };
 

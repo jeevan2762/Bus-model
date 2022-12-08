@@ -24,122 +24,125 @@ const noOfWheelInteriors = 3;
 const wheelInteriorMultiplier = 710;
 const wheelInteriorMargin = 230;
 
-const busBody = (data) => ({
-	top: (150 * data.size) + data.y,
-	left: (0 * data.size) + data.x,
-	height: 350 * data.size,
-	width: 1200 * data.size,
-	border: 2 * data.size,
+const colors = ['mediumslateblue', 'crimson', 'dodgerblue'];
+
+const busBody = ({ size, x, y, animation, transform }) => ({
+	top: (150 * size) + y,
+	left: (0 * size) + x,
+	height: 350 * size,
+	width: 1200 * size,
+	border: 2 * size,
 	borderRadius:
 	{
-		topLeft: 153 * data.size,
-		topRight: 5 * data.size,
-		bottomRight: 5 * data.size,
-		bottomLeft: 15 * data.size,
+		topLeft: 153 * size,
+		topRight: 5 * size,
+		bottomRight: 5 * size,
+		bottomLeft: 15 * size,
 	},
-	animation: data.animation,
-	transform: data.transform,
+	animation: animation,
+	transform: transform,
+	backgroundColor: colors,
 });
 
-const redLights = (data) => ({
-	top: 270 * data.size,
-	left: 1200 * data.size,
-	height: 35 * data.size,
-	width: 10 * data.size,
-	borderRadius: 2 * data.size,
-	border: 1 * data.size,
+const redLights = ({ size }) => ({
+	top: 270 * size,
+	left: 1200 * size,
+	height: 35 * size,
+	width: 10 * size,
+	borderRadius: 2 * size,
+	border: 1 * size,
 });
 
-const rearIndicator = (data) => ({
-	top: 307 * data.size,
-	left: 1200 * data.size,
-	height: 35 * data.size,
-	width: 10 * data.size,
-	border: 1 * data.size,
+const rearIndicator = ({ size }) => ({
+	top: 307 * size,
+	left: 1200 * size,
+	height: 35 * size,
+	width: 10 * size,
+	border: 1 * size,
 });
 
-const frontGlass = (data) => ({
-	top: 40 * data.size,
-	left: 0 * data.size,
-	width: 90 * data.size,
-	height: 136 * data.size,
-	borderTopLeftRadius: 90 * data.size,
-	border: 2 * data.size,
+const frontGlass = ({ size }) => ({
+	top: 40 * size,
+	left: 0 * size,
+	width: 90 * size,
+	height: 136 * size,
+	borderTopLeftRadius: 90 * size,
+	border: 2 * size,
 });
 
-const luggageSection = (data) => ({
-	top: 239 * data.size,
-	left: 585 * data.size,
-	height: 100 * data.size,
-	width: 200 * data.size,
-	border: 3 * data.size,
+const luggageSection = ({ size }) => ({
+	top: 239 * size,
+	left: 585 * size,
+	height: 100 * size,
+	width: 200 * size,
+	border: 3 * size,
 });
 
-const luggageSecHandle = (data) => ({
-	top: 318 * data.size,
-	left: 666 * data.size,
-	height: 10 * data.size,
-	width: 50 * data.size,
+const luggageSecHandle = ({ size }) => ({
+	top: 318 * size,
+	left: 666 * size,
+	height: 10 * size,
+	width: 50 * size,
 });
 
-const windows = (data) =>
+const windows = ({ size }) =>
 	range(1, noOfWindows).map((window) => ({
-		top: 20 * data.size,
-		height: 100 * data.size,
-		width: 170 * data.size,
-		left: (window * multiplier) * data.size,
-		borderRadius: 5 * data.size,
-		border: 2 * data.size,
+		top: 20 * size,
+		height: 100 * size,
+		width: 170 * size,
+		left: (window * multiplier) * size,
+		borderRadius: 5 * size,
+		border: 2 * size,
 	}));
 
-const doors = (data) =>
+const doors = ({ size }) =>
 	range(0, noOfDoors).map((door) => ({
-		top: 156 * data.size,
-		left: ((door * doorMultiplier) + margin) * data.size,
-		height: 180 * data.size,
-		width: 115 * data.size,
-		border: 5 * data.size,
+		top: 156 * size,
+		left: ((door * doorMultiplier) + margin) * size,
+		height: 180 * size,
+		width: 115 * size,
+		border: 5 * size,
 	}));
 
-const rightDoorGlass = (data) =>
+const rightDoorGlass = ({ size }) =>
 	range(0, noOfRightDoorGlasses).map((doorGlass) => ({
 		left: ((doorGlass * rightGlassMultiplier)
-			+ rightGlassMargin) * data.size,
-		top: 164 * data.size,
-		height: 172 * data.size,
-		width: 50 * data.size,
-		border: 1 * data.size,
+			+ rightGlassMargin) * size,
+		top: 164 * size,
+		height: 172 * size,
+		width: 50 * size,
+		border: 1 * size,
 	}));
 
-const leftDoorGlass = (data) =>
+const leftDoorGlass = ({ size }) =>
 	range(0, noOfLeftDoorGlasses).map((doorGlass) => ({
-		left: ((doorGlass * leftGlassMultiplier) + leftGlassMargin) * data.size,
-		top: 164 * data.size,
-		height: 172 * data.size,
-		width: 50 * data.size,
-		border: 1 * data.size,
+		left: ((doorGlass * leftGlassMultiplier) + leftGlassMargin) * size,
+		top: 164 * size,
+		height: 172 * size,
+		width: 50 * size,
+		border: 1 * size,
 	}));
 
-const wheelExterior = (data) =>
+const wheelExterior = ({ size }) =>
 	range(0, noOfExteriorWheels).map((wheel) => ({
 		left: ((wheel * wheelExteriorMultiplier)
-			+ wheelExteriorMargin) * data.size,
-		height: 80 * data.size,
-		top: 290 * data.size,
-		width: 80 * data.size,
-		borderRadius: 100 * data.size,
-		border: 35 * data.size,
+			+ wheelExteriorMargin) * size,
+		height: 80 * size,
+		top: 290 * size,
+		width: 80 * size,
+		borderRadius: 100 * size,
+		border: 35 * size,
 	}));
 
-const wheelInterior = (data) =>
+const wheelInterior = ({ size }) =>
 	range(0, noOfWheelInteriors).map((wheelInt) => ({
 		left: ((wheelInt * wheelInteriorMultiplier)
-			+ wheelInteriorMargin) * data.size,
-		height: 70 * data.size,
-		top: 440 * data.size,
-		width: 37 * data.size,
-		borderRadius: 35 * data.size,
-		border: 2 * data.size,
+			+ wheelInteriorMargin) * size,
+		height: 70 * size,
+		top: 440 * size,
+		width: 37 * size,
+		borderRadius: 35 * size,
+		border: 2 * size,
 	}));
 
 const getDimensions = (data) => ({
