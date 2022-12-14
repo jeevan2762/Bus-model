@@ -1,6 +1,14 @@
 /* eslint-disable no-magic-numbers */
 import { range } from '@laufire/utils/collection';
 
+const images = [
+	'/images/driver.jpg',
+	'/images/childone.jpg',
+	'/images/paxTwo.jpg',
+	'/images/paxThree.jpg',
+	'/images/childone.jpg',
+];
+
 const noOfWindows = 5;
 const multiplier = 230;
 
@@ -93,6 +101,7 @@ const windows = ({ size }) =>
 		left: (window * multiplier) * size,
 		borderRadius: 5 * size,
 		border: 2 * size,
+		backGroundImages: images[window],
 	}));
 
 const doors = ({ size }) =>

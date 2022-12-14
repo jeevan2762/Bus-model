@@ -10,6 +10,7 @@ const WindowStyle = ({ data }) =>
 				width: `${ data.width }px`,
 				border: `${ data.border }px solid black`,
 				borderRadius: `${ data.borderRadius }px`,
+				backgroundImage: `url(${ process.env.PUBLIC_URL + data.backGroundImages })`,
 			}
 		}
 		className="window"
